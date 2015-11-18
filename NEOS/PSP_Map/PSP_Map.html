@@ -1,0 +1,100 @@
+<html>
+    <style>
+      html, body, #map-canvas {
+        height: 90%;
+		width: 80%;
+		margin: 5px;
+        padding: 5px
+      }
+    </style>
+	<title>PSP Assignment Map</title>
+    <p>Input files: <input id="myfile"  type="file"/></p>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDPhUCIHY9AXzMXbTF21LpSZPkM945VHMU&sensor=SET_TO_TRUE_OR_FALSE"></script>
+	<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js" ></script>
+	<script>
+		var markers = [];
+		var markerCluster = null;
+		window.onload = function () {
+			document.getElementById('myfile').onchange = readFile;
+		};
+		function readFile() {
+			file = this.files[0];
+			var fReader = new FileReader();           
+			fReader.onload = function (event) {
+				var parser = event.target.result;
+				allocate(parser);
+			};
+			fReader.readAsText(file);
+		}
+		function allocate(parser){
+			deleteMarkers();
+			if(markerCluster){
+				markerCluster.clearMarkers();
+			}
+			var start = parser.indexOf("=============Participant assigned to Region=============");
+			var end = parser.indexOf("============Region explored situation=============");
+			var result = parser.substring(start, end).split("\n");
+			var LatDiff = (24.848289 - 24.748289)/50.0;
+			var LngDiff = (121.103108 - 120.898108)/10.0;
+			for(var i = 1; i < result.length - 2; i++){
+				var tmp = result[i].split(" ");
+				var participant = getNum(tmp[0]);
+				var region = getNum(tmp[tmp.length-1]);
+				addMarker(participant, region, LatDiff, LngDiff);
+			}
+			var mcOptions = {gridSize: 50, maxZoom: 13};
+			markerCluster = new MarkerClusterer(map, markers, mcOptions);
+			//google.maps.event.trigger(map, 'resize');
+		}
+		function getNum(input){
+			var result = "";
+			for(var i = 0; i < input.length; i++){
+				if(input[i] >= '0' && input[i] <= '9')
+					result += input[i];
+			}
+			return result;
+		}	
+	</script>
+	<script>
+		function addMarker(participant, region, LatDiff, LngDiff) {
+            var image = 'https://raw.githubusercontent.com/hoyuisun/NEOS/master/PSP_Map/marker/marker.png';
+            var Lat = (Math.random() * (LatDiff) + 24.748289 + ((region-1) * LatDiff));
+			var Lng = (Math.random() * (LngDiff) + 120.898108 + ((region%10+1) * LngDiff));
+			var Location = new google.maps.LatLng(Lat, Lng);
+			var marker = new google.maps.Marker({
+				position: Location,
+				map: map,
+                icon: image
+			});
+			var infowindow = new google.maps.InfoWindow({
+				content: '<font size="5"><b>Participant ID: ' + participant + '</b></font>' + '<div id="bodyContent"></br>' + '<font size="4">This participant is assigned to Region: ' + region + '</font></div>'
+			});
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map,marker);
+			});
+			markers.push(marker);
+			//marker.setMap(map);
+		}
+		function clearMarkers() {
+			for(var i = 0; i < markers.length; i++)
+				markers[i].setMap(null);
+		}
+		function deleteMarkers() {
+			clearMarkers();
+			markers.length = 0;
+		}
+		function initialize() {
+			var myLatlng = new google.maps.LatLng(24.793274,120.995298);
+			var mapOptions = {
+				zoom: 12,
+				center: myLatlng
+			}
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

@@ -1,0 +1,1323 @@
+Objective : 176530.0
+
+
+================Participant assigned check================
+Participant1 : 1.0
+Participant2 : 0.0
+Participant3 : 1.0
+Participant4 : 0.0
+Participant5 : 1.0
+Participant6 : 1.0
+Participant7 : 1.0
+Participant8 : 0.0
+Participant9 : 0.0
+Participant10 : 0.0
+Participant11 : 1.0
+Participant12 : 1.0
+Participant13 : 0.0
+Participant14 : 0.0
+Participant15 : 0.0
+Participant16 : 1.0
+Participant17 : 0.0
+Participant18 : 1.0
+Participant19 : 0.0
+Participant20 : 0.0
+Participant21 : 1.0
+Participant22 : 0.0
+Participant23 : 0.0
+Participant24 : 0.0
+Participant25 : 1.0
+Participant26 : 0.0
+Participant27 : 1.0
+Participant28 : 1.0
+Participant29 : 1.0
+Participant30 : 1.0
+Participant31 : 0.0
+Participant32 : 1.0
+Participant33 : 0.0
+Participant34 : 0.0
+Participant35 : 1.0
+Participant36 : 1.0
+Participant37 : 1.0
+Participant38 : 0.0
+Participant39 : 1.0
+Participant40 : 0.0
+Participant41 : 0.0
+Participant42 : 1.0
+Participant43 : 0.0
+Participant44 : 0.0
+Participant45 : 0.0
+Participant46 : 0.0
+Participant47 : 0.0
+Participant48 : 1.0
+Participant49 : 0.0
+Participant50 : 1.0
+Participant51 : 1.0
+Participant52 : 1.0
+Participant53 : 1.0
+Participant54 : 0.0
+Participant55 : 1.0
+Participant56 : 0.0
+Participant57 : 0.0
+Participant58 : 0.0
+Participant59 : 1.0
+Participant60 : 1.0
+Participant61 : 1.0
+Participant62 : 1.0
+Participant63 : 1.0
+Participant64 : 1.0
+Participant65 : 0.0
+Participant66 : 1.0
+Participant67 : 1.0
+Participant68 : 1.0
+Participant69 : 0.0
+Participant70 : 0.0
+Participant71 : 0.0
+Participant72 : 1.0
+Participant73 : 1.0
+Participant74 : 1.0
+Participant75 : 0.0
+Participant76 : 0.0
+Participant77 : 1.0
+Participant78 : 0.0
+Participant79 : 1.0
+Participant80 : 1.0
+Participant81 : 0.0
+Participant82 : 1.0
+Participant83 : 1.0
+Participant84 : 0.0
+Participant85 : 0.0
+Participant86 : 0.0
+Participant87 : 1.0
+Participant88 : 0.0
+Participant89 : 0.0
+Participant90 : 1.0
+Participant91 : 1.0
+Participant92 : 0.0
+Participant93 : 1.0
+Participant94 : 0.0
+Participant95 : 0.0
+Participant96 : 1.0
+Participant97 : 1.0
+Participant98 : 0.0
+Participant99 : 0.0
+Participant100 : 1.0
+Participant101 : 0.0
+Participant102 : 1.0
+Participant103 : 0.0
+Participant104 : 0.0
+Participant105 : 1.0
+Participant106 : 1.0
+Participant107 : 0.0
+Participant108 : 0.0
+Participant109 : 1.0
+Participant110 : 0.0
+Participant111 : 1.0
+Participant112 : 1.0
+Participant113 : 1.0
+Participant114 : 1.0
+Participant115 : 0.0
+Participant116 : 0.0
+Participant117 : 1.0
+Participant118 : 0.0
+Participant119 : 1.0
+Participant120 : 1.0
+Participant121 : 1.0
+Participant122 : 0.0
+Participant123 : 1.0
+Participant124 : 0.0
+Participant125 : 1.0
+Participant126 : 0.0
+Participant127 : 1.0
+Participant128 : 1.0
+Participant129 : 1.0
+Participant130 : 1.0
+Participant131 : 0.0
+Participant132 : 1.0
+Participant133 : 1.0
+Participant134 : 1.0
+Participant135 : 1.0
+Participant136 : 1.0
+Participant137 : 1.0
+Participant138 : 0.0
+Participant139 : 1.0
+Participant140 : 0.0
+Participant141 : 1.0
+Participant142 : 1.0
+Participant143 : 1.0
+Participant144 : 1.0
+Participant145 : 1.0
+Participant146 : 0.0
+Participant147 : 1.0
+Participant148 : 0.0
+Participant149 : 0.0
+Participant150 : 1.0
+Participant151 : 1.0
+Participant152 : 0.0
+Participant153 : 1.0
+Participant154 : 0.0
+Participant155 : 1.0
+Participant156 : 0.0
+Participant157 : 1.0
+Participant158 : 0.0
+Participant159 : 1.0
+Participant160 : 1.0
+Participant161 : 1.0
+Participant162 : 0.0
+Participant163 : 0.0
+Participant164 : 1.0
+Participant165 : 0.0
+Participant166 : 1.0
+Participant167 : 1.0
+Participant168 : 1.0
+Participant169 : 0.0
+Participant170 : 0.0
+Participant171 : 1.0
+Participant172 : 1.0
+Participant173 : 1.0
+Participant174 : 0.0
+Participant175 : 1.0
+Participant176 : 0.0
+Participant177 : 0.0
+Participant178 : 1.0
+Participant179 : 0.0
+Participant180 : 0.0
+Participant181 : 0.0
+Participant182 : 1.0
+Participant183 : 1.0
+Participant184 : 1.0
+Participant185 : 0.0
+Participant186 : 1.0
+Participant187 : 1.0
+Participant188 : 1.0
+Participant189 : 1.0
+Participant190 : 1.0
+Participant191 : 1.0
+Participant192 : 1.0
+Participant193 : 0.0
+Participant194 : 0.0
+Participant195 : 1.0
+Participant196 : 0.0
+Participant197 : 0.0
+Participant198 : 0.0
+Participant199 : 0.0
+Participant200 : 0.0
+Participant201 : 0.0
+Participant202 : 1.0
+Participant203 : 0.0
+Participant204 : 0.0
+Participant205 : 0.0
+Participant206 : 1.0
+Participant207 : 0.0
+Participant208 : 0.0
+Participant209 : 0.0
+Participant210 : 0.0
+Participant211 : 0.0
+Participant212 : 0.0
+Participant213 : 0.0
+Participant214 : 1.0
+Participant215 : 1.0
+Participant216 : 1.0
+Participant217 : 0.0
+Participant218 : 0.0
+Participant219 : 0.0
+Participant220 : 0.0
+Participant221 : 1.0
+Participant222 : 0.0
+Participant223 : 1.0
+Participant224 : 1.0
+Participant225 : 0.0
+Participant226 : 0.0
+Participant227 : 0.0
+Participant228 : 1.0
+Participant229 : 1.0
+Participant230 : 0.0
+Participant231 : 1.0
+Participant232 : 1.0
+Participant233 : 1.0
+Participant234 : 0.0
+Participant235 : 0.0
+Participant236 : 1.0
+Participant237 : 1.0
+Participant238 : 0.0
+Participant239 : 1.0
+Participant240 : 1.0
+Participant241 : 0.0
+Participant242 : 1.0
+Participant243 : 1.0
+Participant244 : 1.0
+Participant245 : 0.0
+Participant246 : 1.0
+Participant247 : 1.0
+Participant248 : 1.0
+Participant249 : 0.0
+Participant250 : 0.0
+Participant251 : 1.0
+Participant252 : 0.0
+Participant253 : 1.0
+Participant254 : 1.0
+Participant255 : 0.0
+Participant256 : 0.0
+Participant257 : 0.0
+Participant258 : 1.0
+Participant259 : 0.0
+Participant260 : 0.0
+Participant261 : 1.0
+Participant262 : 1.0
+Participant263 : 0.0
+Participant264 : 0.0
+Participant265 : 0.0
+Participant266 : 0.0
+Participant267 : 0.0
+Participant268 : 1.0
+Participant269 : 0.0
+Participant270 : 1.0
+Participant271 : 0.0
+Participant272 : 0.0
+Participant273 : 0.0
+Participant274 : 0.0
+Participant275 : 0.0
+Participant276 : 0.0
+Participant277 : 1.0
+Participant278 : 0.0
+Participant279 : 0.0
+Participant280 : 1.0
+Participant281 : 0.0
+Participant282 : 1.0
+Participant283 : 0.0
+Participant284 : 1.0
+Participant285 : 0.0
+Participant286 : 1.0
+Participant287 : 1.0
+Participant288 : 1.0
+Participant289 : 1.0
+Participant290 : 1.0
+Participant291 : 1.0
+Participant292 : 1.0
+Participant293 : 0.0
+Participant294 : 1.0
+Participant295 : 0.0
+Participant296 : 1.0
+Participant297 : 0.0
+Participant298 : 1.0
+Participant299 : 0.0
+Participant300 : 0.0
+Participant301 : 0.0
+Participant302 : 0.0
+Participant303 : 1.0
+Participant304 : 1.0
+Participant305 : 1.0
+Participant306 : 0.0
+Participant307 : 0.0
+Participant308 : 1.0
+Participant309 : 1.0
+Participant310 : 1.0
+Participant311 : 0.0
+Participant312 : 1.0
+Participant313 : 0.0
+Participant314 : 1.0
+Participant315 : 0.0
+Participant316 : 0.0
+Participant317 : 1.0
+Participant318 : 0.0
+Participant319 : 0.0
+Participant320 : 1.0
+Participant321 : 1.0
+Participant322 : 1.0
+Participant323 : 0.0
+Participant324 : 1.0
+Participant325 : 1.0
+Participant326 : 0.0
+Participant327 : 1.0
+Participant328 : 1.0
+Participant329 : 0.0
+Participant330 : 1.0
+Participant331 : 1.0
+Participant332 : 0.0
+Participant333 : 0.0
+Participant334 : 0.0
+Participant335 : 0.0
+Participant336 : 1.0
+Participant337 : 0.0
+Participant338 : 0.0
+Participant339 : 0.0
+Participant340 : 1.0
+Participant341 : 1.0
+Participant342 : 0.0
+Participant343 : 0.0
+Participant344 : 0.0
+Participant345 : 0.0
+Participant346 : 1.0
+Participant347 : 0.0
+Participant348 : 1.0
+Participant349 : 0.0
+Participant350 : 0.0
+Participant351 : 1.0
+Participant352 : 0.0
+Participant353 : 1.0
+Participant354 : 1.0
+Participant355 : 0.0
+Participant356 : 1.0
+Participant357 : 0.0
+Participant358 : 0.0
+Participant359 : 0.0
+Participant360 : 0.0
+Participant361 : 1.0
+Participant362 : 0.0
+Participant363 : 1.0
+Participant364 : 0.0
+Participant365 : 0.0
+Participant366 : 0.0
+Participant367 : 0.0
+Participant368 : 0.0
+Participant369 : 1.0
+Participant370 : 0.0
+Participant371 : 0.0
+Participant372 : 0.0
+Participant373 : 0.0
+Participant374 : 1.0
+Participant375 : 0.0
+Participant376 : 0.0
+Participant377 : 0.0
+Participant378 : 0.0
+Participant379 : 0.0
+Participant380 : 0.0
+Participant381 : 0.0
+Participant382 : 0.0
+Participant383 : 1.0
+Participant384 : 0.0
+Participant385 : 1.0
+Participant386 : 0.0
+Participant387 : 1.0
+Participant388 : 1.0
+Participant389 : 1.0
+Participant390 : 0.0
+Participant391 : 0.0
+Participant392 : 0.0
+Participant393 : 0.0
+Participant394 : 1.0
+Participant395 : 0.0
+Participant396 : 0.0
+Participant397 : 1.0
+Participant398 : 1.0
+Participant399 : 1.0
+Participant400 : 0.0
+Participant401 : 0.0
+Participant402 : 0.0
+Participant403 : 1.0
+Participant404 : 1.0
+Participant405 : 1.0
+Participant406 : 1.0
+Participant407 : 0.0
+Participant408 : 0.0
+Participant409 : 1.0
+Participant410 : 0.0
+Participant411 : 1.0
+Participant412 : 1.0
+Participant413 : 1.0
+Participant414 : 1.0
+Participant415 : 1.0
+Participant416 : 0.0
+Participant417 : 1.0
+Participant418 : 1.0
+Participant419 : 1.0
+Participant420 : 1.0
+Participant421 : 1.0
+Participant422 : 1.0
+Participant423 : 0.0
+Participant424 : 0.0
+Participant425 : 1.0
+Participant426 : 1.0
+Participant427 : 0.0
+Participant428 : 1.0
+Participant429 : 1.0
+Participant430 : 0.0
+Participant431 : 0.0
+Participant432 : 0.0
+Participant433 : 1.0
+Participant434 : 1.0
+Participant435 : 0.0
+Participant436 : 1.0
+Participant437 : 1.0
+Participant438 : 0.0
+Participant439 : 0.0
+Participant440 : 1.0
+Participant441 : 0.0
+Participant442 : 0.0
+Participant443 : 1.0
+Participant444 : 1.0
+Participant445 : 0.0
+Participant446 : 0.0
+Participant447 : 1.0
+Participant448 : 1.0
+Participant449 : 0.0
+Participant450 : 1.0
+Participant451 : 0.0
+Participant452 : 1.0
+Participant453 : 0.0
+Participant454 : 0.0
+Participant455 : 1.0
+Participant456 : 0.0
+Participant457 : 1.0
+Participant458 : 1.0
+Participant459 : 0.0
+Participant460 : 1.0
+Participant461 : 1.0
+Participant462 : 1.0
+Participant463 : 1.0
+Participant464 : 1.0
+Participant465 : 1.0
+Participant466 : 1.0
+Participant467 : 1.0
+Participant468 : 0.0
+Participant469 : 1.0
+Participant470 : 1.0
+Participant471 : 0.0
+Participant472 : 1.0
+Participant473 : 0.0
+Participant474 : 1.0
+Participant475 : 0.0
+Participant476 : 0.0
+Participant477 : 0.0
+Participant478 : 1.0
+Participant479 : 0.0
+Participant480 : 0.0
+Participant481 : 1.0
+Participant482 : 1.0
+Participant483 : 0.0
+Participant484 : 1.0
+Participant485 : 1.0
+Participant486 : 0.0
+Participant487 : 1.0
+Participant488 : 1.0
+Participant489 : 0.0
+Participant490 : 1.0
+Participant491 : 0.0
+Participant492 : 1.0
+Participant493 : 1.0
+Participant494 : 0.0
+Participant495 : 1.0
+Participant496 : 1.0
+Participant497 : 0.0
+Participant498 : 1.0
+Participant499 : 0.0
+Participant500 : 0.0
+Participant501 : 0.0
+Participant502 : 1.0
+Participant503 : 0.0
+Participant504 : 0.0
+Participant505 : 0.0
+Participant506 : 0.0
+Participant507 : 0.0
+Participant508 : 0.0
+Participant509 : 0.0
+Participant510 : 0.0
+Participant511 : 0.0
+Participant512 : 0.0
+Participant513 : 0.0
+Participant514 : 0.0
+Participant515 : 0.0
+Participant516 : 0.0
+Participant517 : 0.0
+Participant518 : 0.0
+Participant519 : 0.0
+Participant520 : 0.0
+Participant521 : 0.0
+Participant522 : 1.0
+Participant523 : 0.0
+Participant524 : 0.0
+Participant525 : 0.0
+Participant526 : 0.0
+Participant527 : 0.0
+Participant528 : 0.0
+Participant529 : 0.0
+Participant530 : 0.0
+Participant531 : 0.0
+Participant532 : 0.0
+Participant533 : 0.0
+Participant534 : 0.0
+Participant535 : 0.0
+Participant536 : 0.0
+Participant537 : 0.0
+Participant538 : 0.0
+Participant539 : 0.0
+Participant540 : 0.0
+Participant541 : 0.0
+Participant542 : 0.0
+Participant543 : 0.0
+Participant544 : 0.0
+Participant545 : 0.0
+Participant546 : 0.0
+Participant547 : 0.0
+Participant548 : 0.0
+Participant549 : 0.0
+Participant550 : 0.0
+Participant551 : 0.0
+Participant552 : 0.0
+Participant553 : 0.0
+Participant554 : 0.0
+Participant555 : 0.0
+Participant556 : 0.0
+Participant557 : 0.0
+Participant558 : 0.0
+Participant559 : 0.0
+Participant560 : 0.0
+Participant561 : 0.0
+Participant562 : 0.0
+Participant563 : 0.0
+Participant564 : 0.0
+Participant565 : 0.0
+Participant566 : 0.0
+Participant567 : 0.0
+Participant568 : 0.0
+Participant569 : 0.0
+Participant570 : 0.0
+Participant571 : 0.0
+Participant572 : 0.0
+Participant573 : 0.0
+Participant574 : 0.0
+Participant575 : 0.0
+Participant576 : 0.0
+Participant577 : 0.0
+Participant578 : 0.0
+Participant579 : 0.0
+Participant580 : 0.0
+Participant581 : 0.0
+Participant582 : 0.0
+Participant583 : 0.0
+Participant584 : 0.0
+Participant585 : 1.0
+Participant586 : 0.0
+Participant587 : 0.0
+Participant588 : 0.0
+Participant589 : 0.0
+Participant590 : 0.0
+Participant591 : 0.0
+Participant592 : 0.0
+Participant593 : 0.0
+Participant594 : 0.0
+Participant595 : 0.0
+Participant596 : 0.0
+Participant597 : 0.0
+Participant598 : 0.0
+Participant599 : 0.0
+Participant600 : 0.0
+Participant601 : 1.0
+Participant602 : 0.0
+Participant603 : 0.0
+Participant604 : 0.0
+Participant605 : 0.0
+Participant606 : 0.0
+Participant607 : 0.0
+Participant608 : 0.0
+Participant609 : 0.0
+Participant610 : 0.0
+Participant611 : 0.0
+Participant612 : 0.0
+Participant613 : 0.0
+Participant614 : 0.0
+Participant615 : 0.0
+Participant616 : 0.0
+Participant617 : 0.0
+Participant618 : 0.0
+Participant619 : 0.0
+Participant620 : 0.0
+Participant621 : 0.0
+Participant622 : 0.0
+Participant623 : 0.0
+Participant624 : 0.0
+Participant625 : 0.0
+Participant626 : 0.0
+Participant627 : 0.0
+Participant628 : 0.0
+Participant629 : 0.0
+Participant630 : 0.0
+Participant631 : 0.0
+Participant632 : 0.0
+Participant633 : 0.0
+Participant634 : 0.0
+Participant635 : 0.0
+Participant636 : 0.0
+Participant637 : 0.0
+Participant638 : 0.0
+Participant639 : 0.0
+Participant640 : 0.0
+Participant641 : 0.0
+Participant642 : 0.0
+Participant643 : 0.0
+Participant644 : 0.0
+Participant645 : 0.0
+Participant646 : 0.0
+Participant647 : 0.0
+Participant648 : 0.0
+Participant649 : 0.0
+Participant650 : 0.0
+Participant651 : 0.0
+Participant652 : 0.0
+Participant653 : 0.0
+Participant654 : 0.0
+Participant655 : 0.0
+Participant656 : 0.0
+Participant657 : 0.0
+Participant658 : 0.0
+Participant659 : 0.0
+Participant660 : 0.0
+Participant661 : 0.0
+Participant662 : 0.0
+Participant663 : 0.0
+Participant664 : 0.0
+Participant665 : 0.0
+Participant666 : 0.0
+Participant667 : 0.0
+Participant668 : 0.0
+Participant669 : 0.0
+Participant670 : 0.0
+Participant671 : 0.0
+Participant672 : 0.0
+Participant673 : 0.0
+Participant674 : 0.0
+Participant675 : 0.0
+Participant676 : 0.0
+Participant677 : 0.0
+Participant678 : 0.0
+Participant679 : 0.0
+Participant680 : 0.0
+Participant681 : 0.0
+Participant682 : 0.0
+Participant683 : 0.0
+Participant684 : 0.0
+Participant685 : 0.0
+Participant686 : 0.0
+Participant687 : 0.0
+Participant688 : 0.0
+Participant689 : 0.0
+Participant690 : 0.0
+Participant691 : 0.0
+Participant692 : 0.0
+Participant693 : 0.0
+Participant694 : 0.0
+Participant695 : 0.0
+Participant696 : 0.0
+Participant697 : 0.0
+Participant698 : 0.0
+Participant699 : 0.0
+Participant700 : 0.0
+Participant701 : 0.0
+Participant702 : 0.0
+Participant703 : 0.0
+Participant704 : 0.0
+Participant705 : 1.0
+Participant706 : 0.0
+Participant707 : 0.0
+Participant708 : 1.0
+Participant709 : 0.0
+Participant710 : 0.0
+Participant711 : 0.0
+Participant712 : 0.0
+Participant713 : 0.0
+Participant714 : 0.0
+Participant715 : 0.0
+Participant716 : 0.0
+Participant717 : 0.0
+Participant718 : 0.0
+Participant719 : 0.0
+Participant720 : 0.0
+Participant721 : 0.0
+Participant722 : 0.0
+Participant723 : 0.0
+Participant724 : 0.0
+Participant725 : 0.0
+Participant726 : 0.0
+Participant727 : 0.0
+Participant728 : 0.0
+Participant729 : 0.0
+Participant730 : 0.0
+Participant731 : 0.0
+Participant732 : 0.0
+Participant733 : 0.0
+Participant734 : 0.0
+Participant735 : 0.0
+Participant736 : 0.0
+Participant737 : 0.0
+Participant738 : 0.0
+Participant739 : 0.0
+Participant740 : 0.0
+Participant741 : 0.0
+Participant742 : 0.0
+Participant743 : 0.0
+Participant744 : 0.0
+Participant745 : 0.0
+Participant746 : 0.0
+Participant747 : 0.0
+Participant748 : 0.0
+Participant749 : 0.0
+Participant750 : 0.0
+Participant751 : 0.0
+Participant752 : 0.0
+Participant753 : 0.0
+Participant754 : 0.0
+Participant755 : 0.0
+Participant756 : 0.0
+Participant757 : 0.0
+Participant758 : 0.0
+Participant759 : 0.0
+Participant760 : 0.0
+Participant761 : 0.0
+Participant762 : 0.0
+Participant763 : 0.0
+Participant764 : 0.0
+Participant765 : 0.0
+Participant766 : 0.0
+Participant767 : 0.0
+Participant768 : 1.0
+Participant769 : 0.0
+Participant770 : 0.0
+Participant771 : 0.0
+Participant772 : 0.0
+Participant773 : 0.0
+Participant774 : 0.0
+Participant775 : 0.0
+Participant776 : 0.0
+Participant777 : 0.0
+Participant778 : 0.0
+Participant779 : 0.0
+Participant780 : 0.0
+Participant781 : 0.0
+Participant782 : 0.0
+Participant783 : 0.0
+Participant784 : 0.0
+Participant785 : 0.0
+Participant786 : 0.0
+Participant787 : 0.0
+Participant788 : 0.0
+Participant789 : 0.0
+Participant790 : 0.0
+Participant791 : 0.0
+Participant792 : 0.0
+Participant793 : 0.0
+Participant794 : 0.0
+Participant795 : 0.0
+Participant796 : 0.0
+Participant797 : 0.0
+Participant798 : 0.0
+Participant799 : 0.0
+Participant800 : 0.0
+Participant801 : 0.0
+Participant802 : 0.0
+Participant803 : 1.0
+Participant804 : 0.0
+Participant805 : 1.0
+Participant806 : 0.0
+Participant807 : 0.0
+Participant808 : 0.0
+Participant809 : 0.0
+Participant810 : 0.0
+Participant811 : 0.0
+Participant812 : 0.0
+Participant813 : 0.0
+Participant814 : 0.0
+Participant815 : 0.0
+Participant816 : 0.0
+Participant817 : 0.0
+Participant818 : 0.0
+Participant819 : 0.0
+Participant820 : 0.0
+Participant821 : 0.0
+Participant822 : 0.0
+Participant823 : 0.0
+Participant824 : 0.0
+Participant825 : 0.0
+Participant826 : 0.0
+Participant827 : 0.0
+Participant828 : 0.0
+Participant829 : 0.0
+Participant830 : 0.0
+Participant831 : 0.0
+Participant832 : 0.0
+Participant833 : 0.0
+Participant834 : 0.0
+Participant835 : 0.0
+Participant836 : 0.0
+Participant837 : 0.0
+Participant838 : 0.0
+Participant839 : 0.0
+Participant840 : 0.0
+Participant841 : 0.0
+Participant842 : 0.0
+Participant843 : 0.0
+Participant844 : 0.0
+Participant845 : 0.0
+Participant846 : 0.0
+Participant847 : 0.0
+Participant848 : 0.0
+Participant849 : 0.0
+Participant850 : 0.0
+Participant851 : 0.0
+Participant852 : 0.0
+Participant853 : 0.0
+Participant854 : 0.0
+Participant855 : 0.0
+Participant856 : 0.0
+Participant857 : 0.0
+Participant858 : 0.0
+Participant859 : 0.0
+Participant860 : 0.0
+Participant861 : 0.0
+Participant862 : 0.0
+Participant863 : 0.0
+Participant864 : 0.0
+Participant865 : 0.0
+Participant866 : 0.0
+Participant867 : 0.0
+Participant868 : 0.0
+Participant869 : 0.0
+Participant870 : 0.0
+Participant871 : 0.0
+Participant872 : 0.0
+Participant873 : 0.0
+Participant874 : 0.0
+Participant875 : 0.0
+Participant876 : 0.0
+Participant877 : 0.0
+Participant878 : 0.0
+Participant879 : 0.0
+Participant880 : 0.0
+Participant881 : 0.0
+Participant882 : 0.0
+Participant883 : 0.0
+Participant884 : 0.0
+Participant885 : 0.0
+Participant886 : 0.0
+Participant887 : 0.0
+Participant888 : 0.0
+Participant889 : 0.0
+Participant890 : 0.0
+Participant891 : 0.0
+Participant892 : 0.0
+Participant893 : 0.0
+Participant894 : 0.0
+Participant895 : 0.0
+Participant896 : 0.0
+Participant897 : 0.0
+Participant898 : 0.0
+Participant899 : 0.0
+Participant900 : 0.0
+Participant901 : 0.0
+Participant902 : 0.0
+Participant903 : 0.0
+Participant904 : 0.0
+Participant905 : 0.0
+Participant906 : 0.0
+Participant907 : 0.0
+Participant908 : 0.0
+Participant909 : 0.0
+Participant910 : 0.0
+Participant911 : 0.0
+Participant912 : 0.0
+Participant913 : 0.0
+Participant914 : 0.0
+Participant915 : 0.0
+Participant916 : 0.0
+Participant917 : 0.0
+Participant918 : 0.0
+Participant919 : 0.0
+Participant920 : 0.0
+Participant921 : 0.0
+Participant922 : 0.0
+Participant923 : 0.0
+Participant924 : 1.0
+Participant925 : 0.0
+Participant926 : 0.0
+Participant927 : 0.0
+Participant928 : 0.0
+Participant929 : 0.0
+Participant930 : 0.0
+Participant931 : 0.0
+Participant932 : 0.0
+Participant933 : 1.0
+Participant934 : 0.0
+Participant935 : 0.0
+Participant936 : 0.0
+Participant937 : 0.0
+Participant938 : 0.0
+Participant939 : 0.0
+Participant940 : 0.0
+Participant941 : 0.0
+Participant942 : 0.0
+Participant943 : 0.0
+Participant944 : 0.0
+Participant945 : 0.0
+Participant946 : 0.0
+Participant947 : 0.0
+Participant948 : 0.0
+Participant949 : 0.0
+Participant950 : 0.0
+Participant951 : 0.0
+Participant952 : 0.0
+Participant953 : 0.0
+Participant954 : 0.0
+Participant955 : 0.0
+Participant956 : 0.0
+Participant957 : 0.0
+Participant958 : 0.0
+Participant959 : 0.0
+Participant960 : 0.0
+Participant961 : 0.0
+Participant962 : 0.0
+Participant963 : 0.0
+Participant964 : 0.0
+Participant965 : 0.0
+Participant966 : 0.0
+Participant967 : 0.0
+Participant968 : 0.0
+Participant969 : 0.0
+Participant970 : 0.0
+Participant971 : 0.0
+Participant972 : 0.0
+Participant973 : 0.0
+Participant974 : 0.0
+Participant975 : 0.0
+Participant976 : 0.0
+Participant977 : 0.0
+Participant978 : 0.0
+Participant979 : 0.0
+Participant980 : 0.0
+Participant981 : 0.0
+Participant982 : 0.0
+Participant983 : 0.0
+Participant984 : 0.0
+Participant985 : 0.0
+Participant986 : 0.0
+Participant987 : 0.0
+Participant988 : 0.0
+Participant989 : 0.0
+Participant990 : 0.0
+Participant991 : 0.0
+Participant992 : 0.0
+Participant993 : 0.0
+Participant994 : 0.0
+Participant995 : 0.0
+Participant996 : 0.0
+Participant997 : 0.0
+Participant998 : 0.0
+Participant999 : 0.0
+Participant1000 : 0.0
+
+=============Participant assigned to Region=============
+Participant1 is assigned to Region12
+Participant3 is assigned to Region47
+Participant5 is assigned to Region2
+Participant6 is assigned to Region50
+Participant7 is assigned to Region47
+Participant11 is assigned to Region25
+Participant12 is assigned to Region10
+Participant16 is assigned to Region45
+Participant18 is assigned to Region7
+Participant21 is assigned to Region47
+Participant25 is assigned to Region31
+Participant27 is assigned to Region28
+Participant28 is assigned to Region13
+Participant29 is assigned to Region48
+Participant30 is assigned to Region49
+Participant32 is assigned to Region41
+Participant35 is assigned to Region3
+Participant36 is assigned to Region1
+Participant37 is assigned to Region11
+Participant39 is assigned to Region30
+Participant42 is assigned to Region42
+Participant48 is assigned to Region37
+Participant50 is assigned to Region33
+Participant51 is assigned to Region12
+Participant52 is assigned to Region2
+Participant53 is assigned to Region2
+Participant55 is assigned to Region47
+Participant59 is assigned to Region42
+Participant60 is assigned to Region45
+Participant61 is assigned to Region5
+Participant62 is assigned to Region31
+Participant63 is assigned to Region12
+Participant64 is assigned to Region21
+Participant66 is assigned to Region21
+Participant67 is assigned to Region41
+Participant68 is assigned to Region29
+Participant72 is assigned to Region15
+Participant73 is assigned to Region11
+Participant74 is assigned to Region37
+Participant77 is assigned to Region12
+Participant79 is assigned to Region28
+Participant80 is assigned to Region48
+Participant82 is assigned to Region47
+Participant83 is assigned to Region33
+Participant87 is assigned to Region25
+Participant90 is assigned to Region30
+Participant91 is assigned to Region2
+Participant93 is assigned to Region10
+Participant96 is assigned to Region15
+Participant97 is assigned to Region48
+Participant100 is assigned to Region2
+Participant102 is assigned to Region25
+Participant105 is assigned to Region9
+Participant106 is assigned to Region8
+Participant109 is assigned to Region48
+Participant111 is assigned to Region15
+Participant112 is assigned to Region33
+Participant113 is assigned to Region36
+Participant114 is assigned to Region1
+Participant117 is assigned to Region3
+Participant119 is assigned to Region28
+Participant120 is assigned to Region28
+Participant121 is assigned to Region10
+Participant123 is assigned to Region15
+Participant125 is assigned to Region41
+Participant127 is assigned to Region29
+Participant128 is assigned to Region12
+Participant129 is assigned to Region37
+Participant130 is assigned to Region41
+Participant132 is assigned to Region32
+Participant133 is assigned to Region3
+Participant134 is assigned to Region48
+Participant135 is assigned to Region20
+Participant136 is assigned to Region3
+Participant137 is assigned to Region26
+Participant139 is assigned to Region12
+Participant141 is assigned to Region28
+Participant142 is assigned to Region11
+Participant143 is assigned to Region42
+Participant144 is assigned to Region36
+Participant145 is assigned to Region15
+Participant147 is assigned to Region13
+Participant150 is assigned to Region7
+Participant151 is assigned to Region32
+Participant153 is assigned to Region20
+Participant155 is assigned to Region48
+Participant157 is assigned to Region25
+Participant159 is assigned to Region41
+Participant160 is assigned to Region26
+Participant161 is assigned to Region42
+Participant164 is assigned to Region18
+Participant166 is assigned to Region37
+Participant167 is assigned to Region23
+Participant168 is assigned to Region48
+Participant171 is assigned to Region37
+Participant172 is assigned to Region45
+Participant173 is assigned to Region42
+Participant175 is assigned to Region48
+Participant178 is assigned to Region41
+Participant182 is assigned to Region47
+Participant183 is assigned to Region1
+Participant184 is assigned to Region14
+Participant186 is assigned to Region28
+Participant187 is assigned to Region30
+Participant188 is assigned to Region32
+Participant189 is assigned to Region3
+Participant190 is assigned to Region9
+Participant191 is assigned to Region7
+Participant192 is assigned to Region5
+Participant195 is assigned to Region5
+Participant202 is assigned to Region41
+Participant206 is assigned to Region25
+Participant214 is assigned to Region10
+Participant215 is assigned to Region22
+Participant216 is assigned to Region28
+Participant221 is assigned to Region25
+Participant223 is assigned to Region49
+Participant224 is assigned to Region30
+Participant228 is assigned to Region40
+Participant229 is assigned to Region48
+Participant231 is assigned to Region10
+Participant232 is assigned to Region3
+Participant233 is assigned to Region2
+Participant236 is assigned to Region15
+Participant237 is assigned to Region43
+Participant239 is assigned to Region29
+Participant240 is assigned to Region12
+Participant242 is assigned to Region2
+Participant243 is assigned to Region36
+Participant244 is assigned to Region15
+Participant246 is assigned to Region25
+Participant247 is assigned to Region21
+Participant248 is assigned to Region32
+Participant251 is assigned to Region47
+Participant253 is assigned to Region7
+Participant254 is assigned to Region33
+Participant258 is assigned to Region3
+Participant261 is assigned to Region13
+Participant262 is assigned to Region7
+Participant268 is assigned to Region39
+Participant270 is assigned to Region1
+Participant277 is assigned to Region15
+Participant280 is assigned to Region12
+Participant282 is assigned to Region41
+Participant284 is assigned to Region14
+Participant286 is assigned to Region28
+Participant287 is assigned to Region33
+Participant288 is assigned to Region25
+Participant289 is assigned to Region7
+Participant290 is assigned to Region43
+Participant291 is assigned to Region36
+Participant292 is assigned to Region25
+Participant294 is assigned to Region2
+Participant296 is assigned to Region13
+Participant298 is assigned to Region42
+Participant303 is assigned to Region48
+Participant304 is assigned to Region7
+Participant305 is assigned to Region21
+Participant308 is assigned to Region49
+Participant309 is assigned to Region7
+Participant310 is assigned to Region39
+Participant312 is assigned to Region8
+Participant314 is assigned to Region37
+Participant317 is assigned to Region26
+Participant320 is assigned to Region32
+Participant321 is assigned to Region48
+Participant322 is assigned to Region31
+Participant324 is assigned to Region9
+Participant325 is assigned to Region33
+Participant327 is assigned to Region12
+Participant328 is assigned to Region20
+Participant330 is assigned to Region42
+Participant331 is assigned to Region42
+Participant336 is assigned to Region44
+Participant340 is assigned to Region8
+Participant341 is assigned to Region7
+Participant346 is assigned to Region30
+Participant348 is assigned to Region29
+Participant351 is assigned to Region2
+Participant353 is assigned to Region25
+Participant354 is assigned to Region12
+Participant356 is assigned to Region28
+Participant361 is assigned to Region2
+Participant363 is assigned to Region48
+Participant369 is assigned to Region9
+Participant374 is assigned to Region9
+Participant383 is assigned to Region41
+Participant385 is assigned to Region25
+Participant387 is assigned to Region46
+Participant388 is assigned to Region45
+Participant389 is assigned to Region14
+Participant394 is assigned to Region29
+Participant397 is assigned to Region33
+Participant398 is assigned to Region3
+Participant399 is assigned to Region41
+Participant403 is assigned to Region3
+Participant404 is assigned to Region21
+Participant405 is assigned to Region36
+Participant406 is assigned to Region7
+Participant409 is assigned to Region29
+Participant411 is assigned to Region45
+Participant412 is assigned to Region28
+Participant413 is assigned to Region33
+Participant414 is assigned to Region33
+Participant415 is assigned to Region47
+Participant417 is assigned to Region13
+Participant418 is assigned to Region49
+Participant419 is assigned to Region13
+Participant420 is assigned to Region37
+Participant421 is assigned to Region14
+Participant422 is assigned to Region15
+Participant425 is assigned to Region41
+Participant426 is assigned to Region48
+Participant428 is assigned to Region14
+Participant429 is assigned to Region48
+Participant433 is assigned to Region2
+Participant434 is assigned to Region29
+Participant436 is assigned to Region43
+Participant437 is assigned to Region36
+Participant440 is assigned to Region33
+Participant443 is assigned to Region29
+Participant444 is assigned to Region14
+Participant447 is assigned to Region18
+Participant448 is assigned to Region47
+Participant450 is assigned to Region32
+Participant452 is assigned to Region32
+Participant455 is assigned to Region31
+Participant457 is assigned to Region40
+Participant458 is assigned to Region29
+Participant460 is assigned to Region5
+Participant461 is assigned to Region29
+Participant462 is assigned to Region45
+Participant463 is assigned to Region41
+Participant464 is assigned to Region2
+Participant465 is assigned to Region18
+Participant466 is assigned to Region12
+Participant467 is assigned to Region45
+Participant469 is assigned to Region15
+Participant470 is assigned to Region33
+Participant472 is assigned to Region30
+Participant474 is assigned to Region43
+Participant478 is assigned to Region29
+Participant481 is assigned to Region41
+Participant482 is assigned to Region37
+Participant484 is assigned to Region29
+Participant485 is assigned to Region33
+Participant487 is assigned to Region3
+Participant488 is assigned to Region29
+Participant490 is assigned to Region25
+Participant492 is assigned to Region7
+Participant493 is assigned to Region47
+Participant495 is assigned to Region12
+Participant496 is assigned to Region14
+Participant498 is assigned to Region1
+Participant502 is assigned to Region2
+Participant522 is assigned to Region41
+Participant585 is assigned to Region28
+Participant601 is assigned to Region28
+Participant705 is assigned to Region25
+Participant708 is assigned to Region14
+Participant768 is assigned to Region12
+Participant803 is assigned to Region32
+Participant805 is assigned to Region47
+Participant924 is assigned to Region7
+Participant933 is assigned to Region29
+
+============Region explored situation=============
+Region1 : 1.0
+Region2 : 1.0
+Region3 : 1.0
+Region4 : 0.0
+Region5 : 1.0
+Region6 : 0.0
+Region7 : 1.0
+Region8 : 1.0
+Region9 : 1.0
+Region10 : 1.0
+Region11 : 1.0
+Region12 : 1.0
+Region13 : 1.0
+Region14 : 1.0
+Region15 : 1.0
+Region16 : 0.0
+Region17 : 0.0
+Region18 : 1.0
+Region19 : 0.0
+Region20 : 1.0
+Region21 : 1.0
+Region22 : 1.0
+Region23 : 1.0
+Region24 : 0.0
+Region25 : 1.0
+Region26 : 1.0
+Region27 : 0.0
+Region28 : 1.0
+Region29 : 1.0
+Region30 : 1.0
+Region31 : 1.0
+Region32 : 1.0
+Region33 : 1.0
+Region34 : 0.0
+Region35 : 0.0
+Region36 : 1.0
+Region37 : 1.0
+Region38 : 0.0
+Region39 : 1.0
+Region40 : 0.0
+Region41 : 1.0
+Region42 : 1.0
+Region43 : 1.0
+Region44 : 1.0
+Region45 : 1.0
+Region46 : 1.0
+Region47 : 1.0
+Region48 : 1.0
+Region49 : 1.0
+Region50 : 1.0
