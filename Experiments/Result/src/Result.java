@@ -11,12 +11,10 @@ public class Result {
 		
 		int solverNum[] = new int[5];
 		int noAns = 0;
-		for(int i = 62; i <= 62; i++){	
+		for(int i = 1; i <= 100; i++){	
 			double minT = 2147483647;
 			double minO = 2147483647;
 			int minOp = -1, minTp = -1;
-			/*if(i== 62)	
-				continue;*/
 			for(int j = 0; j < 5; j++){
 				FileReader fr = new FileReader("C:\\Users\\Dog\\Desktop\\NEOS\\Case1_output\\parseS_" + solver[j] + " F_Dog" + i + ".txt");
 				BufferedReader br=new BufferedReader(fr);
