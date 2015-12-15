@@ -31,9 +31,20 @@ for i = 1:T
     Flag = true;
     benefit_uniform = zeros(1500, 5);
     cost_uniform = zeros(1500, 5);
+    while(Flag)
+        seed = unidrnd(3, 1500, 5);
+        %SD = std(seed);
+        %M = mean(seed);
+        %cv = SD/M;
+        %if cv > 0.45
+            %seed = unidrnd(3, 1500, 5);
+        %else
+            Flag = false;
+        %end
+    end
     for j=1:P
         for k=1:R
-            choose = unidrnd(3);
+            choose = seed(j,k);
             B_var = ceil(B/3);
             C_var = ceil(C/3);
             if (choose == 1)
@@ -54,18 +65,8 @@ for i = 1:T
             end
         end
     end
-    while(Flag)
-        SD = std(benefit_uniform);
-        M = mean(benefit_uniform);
-        %cv = SD/M;
-        %if cv > 0.6
-            %benefit_uniform = unidrnd(100, P, R);
-        %else
-            Flag = false;
-            num = num2str(i);
-            fileName = ['data' num '.xls'];
-            xlswrite(fileName, benefit_uniform, 'benefits', ['B2:' col num2str(P+1)]);
-            xlswrite(fileName, cost_uniform, 'costs', ['B2:' col num2str(P+1)]);
-        %end
-    end
+    num = num2str(i);
+    fileName = ['data' num '.xls'];
+    xlswrite(fileName, benefit_uniform, 'benefits', ['B2:' col num2str(P+1)]);
+    xlswrite(fileName, cost_uniform, 'costs', ['B2:' col num2str(P+1)]);
 end
