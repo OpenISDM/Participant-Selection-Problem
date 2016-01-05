@@ -1,6 +1,6 @@
 ### What are these files doing ###
 
-* GenerateData:  
+* GenerateData(Matlab):  
 The file generates TAS and PSS randomly.
 * GenerateGDX:  
 Translate xls to cdx files
