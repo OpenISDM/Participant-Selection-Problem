@@ -15,7 +15,7 @@ public class PSP_heuristic {
 	
 	//PSP parameter
 	private static int PARTICIPANT = 1500;
-	private static int REGION = 20;
+	private static int REGION = 40;
 	private static int[][] benefit = null;
     private static int[][] cost = null;
     private static int[][] value = null;
@@ -28,35 +28,60 @@ public class PSP_heuristic {
 	private static Queue <B2C> queue = new LinkedList<B2C>();
     
     //Budget setting
-    private static int Budget = 5000;
+    private static int Budget;
     
     //consideration
     private static int objective;
     private static int selectedparticipant;
     private static int totalcost;
-    
+    private static int regionBlankNum[] = new int[REGION+1];
+    private static int regionNum[] = new int[REGION+1];
 	public static void main(String[] args) {
 
         // create a workspace
-		String dirpath = "C:/Users/Dog/Desktop";
-        for(int i = 1; i <= 1; i++){
-        	String input = setPath(dirpath, i);
-    		getData(new File(input));
-    		
-    		Initconsider();
+		String dirpath = "C:/Users/Dog/Desktop/NEOS";
+        
+		Initconsider();
+		
+		for(int i = 1; i <= 100; i++){
+			index = 0;
+    		Budget = 2000;
+			String input = setPath(dirpath, i);
+    		getData(new File(input));	
     		//execute Prof. Chu algo
     		Calculate();
+    		CountRegion();
         }
+		System.out.println("Objective Value: " + objective + 
+		", Participants: " + selectedparticipant + ", Totalcost: " + totalcost);
+		for(int i = 1; i <= REGION; i++)
+			System.out.println(regionBlankNum[i]);
+		System.out.println("");
+		for(int i = 1; i <= REGION; i++)
+			System.out.println(regionNum[i]);
     }
 	
+	private static void CountRegion(){
+		for(int i = 1; i <= REGION; i++){
+			regionBlankNum[i] += value[1][i];
+		}
+	}
+	
 	private static String setPath(String dirpath, int num){
-		return dirpath + "\\data" + num + ".xls";
+		return dirpath + "/xls/data" + num + ".xls";
 	}
 	
 	private static void Initconsider(){
 		objective = 0;
 		selectedparticipant = 0;
 		totalcost = 0;
+		benefit = new int[PARTICIPANT+1][REGION+1];
+		cost = new int[PARTICIPANT+1][REGION+1];
+		value = new int[PARTICIPANT+1][REGION+1];
+		for(int i = 0; i <= REGION; i++){
+			regionBlankNum[i] = 0;
+			regionNum[i] = 0;
+		}
 	}
 	
 	private static void getData(File inputFile){
@@ -66,7 +91,6 @@ public class PSP_heuristic {
             
             //read benefits sheet
             Sheet benefits = w.getSheet("benefits");
-            benefit = new int[PARTICIPANT+1][REGION+1];
             for (int j = 1; j <= REGION; j++){
                 for (int i = 1; i <= PARTICIPANT; i++){
                 	benefit[i][j] = Integer.valueOf(benefits.getCell(j, i).getContents());
@@ -75,7 +99,6 @@ public class PSP_heuristic {
 
             //read costs sheet
             Sheet costs = w.getSheet("costs");
-            cost = new int[PARTICIPANT+1][REGION+1];
             for (int j = 1; j <= REGION; j++){
                 for (int i = 1; i <= PARTICIPANT; i++){
                 	cost[i][j] = Integer.valueOf(costs.getCell(j, i).getContents());
@@ -84,10 +107,10 @@ public class PSP_heuristic {
             
             //read value sheet
             Sheet values = w.getSheet("values");
-            value = new int[PARTICIPANT+1][REGION+1];
             for (int j = 0; j < REGION; j++){
                 for (int i = 1; i < 2; i++){
                 	value[i][j+1] = Integer.valueOf(values.getCell(j, i).getContents());
+                	regionNum[j+1] += value[i][j+1];
                 }
             }
 
@@ -139,8 +162,8 @@ public class PSP_heuristic {
 			}
 		}
 		end = System.currentTimeMillis();
-		System.out.println("Objective Value: " + objective + ", Execution Time: " + (end-start)/1000.0 + 
-				", Participants: " + selectedparticipant + ", Totalcost: " + totalcost);
+		//System.out.println("Objective Value: " + objective + ", Execution Time: " + (end-start)/1000.0 + 
+				//", Participants: " + selectedparticipant + ", Totalcost: " + totalcost);
 	}
 	
 	public static void setSelected(B2C quality[], int participant, boolean flag){
