@@ -25,10 +25,6 @@ public class JobResult implements ResultCallback {
 	
 	public void handleFinalResult(String results){
 		
-		final int location_Num = 50;
-		final int agent_Num = 1000;
-		
-		
 		/* write into result text files (origin information) */
 		try {
 			FileWriter fw = new FileWriter("result.txt");
@@ -47,6 +43,19 @@ public class JobResult implements ResultCallback {
 			//System.out.printf("Objective :%f \n\n", parser.getObjective());
 			fw.write("{\"Objective\" : " + "\"" + parser.getObjective() + "\",\r\n");
 			
+			//Execution time
+			int timeStart = results.indexOf("RESOURCE USAGE, LIMIT");
+			int timeEnd = results.indexOf("ITERATION COUNT, LIMIT");
+			int pS = timeStart + 21;
+			int pE = timeEnd - 2;
+			while(results.charAt(pS) == ' ')
+				pS++;
+			while(results.charAt(pE) != ' ')
+				pE--;
+			timeStart = pS;
+			timeEnd = pE;
+			String execute = results.substring(timeStart, timeEnd);
+			fw.write("\"Execution time\": " + "\"" + execute + "\",\r\n");
 			
 			/* agent is assigned to location */
 			//System.out.println("================Agent assigned to location================");
@@ -57,8 +66,6 @@ public class JobResult implements ResultCallback {
 					fw.write(row.getIndex(0) + " is assigned to " + row.getIndex(1) + "\r\n");
 					//System.out.printf("%s is assigned to %s\n" , row.getIndex(0),row.getIndex(1));
 			}*/
-			
-			
 			
 			//cost
 			SolutionData cost = parser.getSymbol("usebudget", SolutionData.VAR, 0);
