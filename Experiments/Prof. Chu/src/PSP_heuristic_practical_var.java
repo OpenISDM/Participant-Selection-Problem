@@ -9,7 +9,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-public class PSP_heuristic_practical {
+public class PSP_heuristic_practical_var {
 
 	private static int index = 0;
 	
