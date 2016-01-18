@@ -9,7 +9,7 @@ public class NEOS implements Runnable{
 	private static final String srcPath = "C:\\Users\\Dog\\Desktop\\NEOS\\data\\Dog";
 	/* set the attribute of the Neos Job */
 	private static final String type = "milp";
-	private static final String solver[] = {"Gurobi", "MOSEK", "XpressMP", "CPLEX", "Cbc", "scip"};
+	private static final String solver[] = {"Gurobi", "MOSEK", "XpressMP", "CPLEX", "Cbc"};
 	private static final String input = "GAMS";
 	/* create NeosClient object client with server information */
 	private static NeosClient client;
@@ -23,9 +23,9 @@ public class NEOS implements Runnable{
 		/* create FileUtils object to facilitate reading model file ChemEq.txt */
 		/* into a string called example */
 		FileUtils fileUtils = FileUtils.getInstance(FileUtils.APPLICATION_MODE);
-		String gms = fileUtils.readFile("C:/Users/Dog/Desktop/NEOS/practical/practice_5_B80.txt");
+		String gms = fileUtils.readFile("C:/Users/Dog/Desktop/NEOS/practical/practice_20_B80.txt");
 		
-		for (int j =1; j <= 100; j++){
+		for (int j = 1; j <= 100; j++){
 			for(int i = 0; i < 5; i++){
 				String passPath = srcPath;
 				passPath = passPath + j + ".gdx";
@@ -45,7 +45,7 @@ public class NEOS implements Runnable{
 		        t.start(); // ¶}©l°õ¦æRunnable.run();
 		        
 		        //avoid NEOS server fail
-		        Thread.sleep(1000);
+		        Thread.sleep(10000);
 			}
 		}
 	}
@@ -54,7 +54,6 @@ public class NEOS implements Runnable{
 		// TODO Auto-generated method stub
 		System.out.println(Thread.currentThread().getName());
 		JobResult jobResult = new JobResult(Thread.currentThread().getName());
-		
 		/* call submitJob() method with string representation of job XML */
 		client.submitJobNonBlocking(PSPJob.toXMLString(), jobResult);
 	}

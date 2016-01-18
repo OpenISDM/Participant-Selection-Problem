@@ -4,7 +4,6 @@ import java.io.IOException;
 import org.neos.client.ResultCallback;
 import org.neos.gams.SolutionData;
 import org.neos.gams.SolutionParser;
-import org.neos.gams.SolutionRow;
 
 public class JobResult implements ResultCallback {
 	String parseName;
@@ -76,19 +75,30 @@ public class JobResult implements ResultCallback {
 			SolutionData people = parser.getSymbol("people", SolutionData.VAR, 0);
 			fw.write("\"People\": " + "\"" + people.getRows().get(0).getLevel() + "\",\r\n");
 			
-			
 			//waste
 			SolutionData region = parser.getSymbol("y", SolutionData.VAR, 1);
 			SolutionData waste = parser.getSymbol("sub5", SolutionData.EQU, 1);
+			
+			int REGION = region.getRows().size();
+			double fullregion[] = new double[REGION];
+			double onlyregion [] = new double[REGION];
+			
 			for(int i = 0; i < region.getRows().size(); i++){
 				double temp = region.getRows().get(i).getLevel();
 				double spend = waste.getRows().get(i).getLevel();
-				if(temp == 1.0)
+				if(temp == 1.0){
 					onlywaste += spend;
+					onlyregion[i] += spend;
+				}
 				totalwaste += spend;
+				fullregion[i] += spend;
 			}
 			
-			fw.write("\"Total waste\": " + "\"" + totalwaste + "\",\r\n\"Only waste\": " + "\"" + onlywaste +"\"}\r\n");
+			fw.write("\"Total waste\": " + "\"" + totalwaste + "\",\r\n\"Only waste\": " + "\"" + onlywaste +"\",\r\n");
+			for(int i = 0; i < region.getRows().size()-1; i++)
+				fw.write("\"Region " +(i+1) + " Only Region" + "\": " + "\"" + onlyregion[i] + "\",\r\n\"Region " +(i+1) + " Full region" + "\": " + "\"" + fullregion[i] +"\",\r\n");
+			for(int i = region.getRows().size()-1; i < region.getRows().size(); i++)
+				fw.write("\"Region " +(i+1) + " Only Region" + "\": " + "\"" + onlyregion[i] + "\",\r\n\"Region " +(i+1) + " Full region" + "\": " + "\"" + fullregion[i] +"\"}\r\n");
 			fw.flush();
 			fw.close();
 			
