@@ -15,13 +15,18 @@ public class PSP_heuristic_practical_var {
 	
 	//PSP parameter
 	private static int PARTICIPANT = 1500;
-	private static int REGION = 5;
+	private static int REGION = 10;
 	private static int[][] benefit = null;
     private static int[][] cost = null;
     private static int[][] value = null;
-    private static int [][] Calvalue = null;
-    private static double [] regionCP = null;
-    private static boolean [] memoryR = null; 
+    
+    //Calculate region value is up to be full.
+    private static double [] RegionCP = null;
+    private static int [] RegionBenefit = null;
+    private static int [] RegionCost = null;
+    private static boolean [] RegionIsFull = null;
+    private static int [] RegionParticipant = null;
+    private static RegionOrder [] RegionVisitOrder = null;
 	
     //execution time
     static long start, end;
@@ -38,26 +43,27 @@ public class PSP_heuristic_practical_var {
     private static int selectedparticipant;
     private static int totalcost;
     private static int waste;
-    private static int runTime;
-    
 	public static void main(String[] args) {
 
         // create a workspace
 		String dirpath = "C:/Users/Dog/Desktop/NEOS";
         
 		Initconsider();
+		InitCalRegion();
+		start = System.currentTimeMillis();
 		
-		for(int i = 3; i <= 4; i++){
+		for(int i = 1; i <= 100; i++){
 			index = 0;
-			runTime = REGION;
     		Budget = 5000;
 			String input = setPath(dirpath, i);
     		getData(new File(input));	
     		//execute Prof. Chu algo
     		Calculate();
         }
+		end = System.currentTimeMillis();
+		
 		System.out.println("Objective Value: " + objective + ", Waste: " + waste 
-		+ ", Participants: " + selectedparticipant + ", Totalcost: " + totalcost);
+		+ ", Participants: " + selectedparticipant + ", Totalcost: " + totalcost + ", Execution Time: " + (end-start)/1000.0);
     }
 	
 	private static String setPath(String dirpath, int num){
@@ -71,10 +77,16 @@ public class PSP_heuristic_practical_var {
 		waste = 0;
 		benefit = new int[PARTICIPANT+1][REGION+1];
 		cost = new int[PARTICIPANT+1][REGION+1];
-		value = new int[PARTICIPANT+1][REGION+1];
-		Calvalue = new int[PARTICIPANT+1][REGION+1];
-		regionCP = new double [REGION+1];
-		memoryR = new boolean[REGION+1];
+		value = new int[2][REGION+1];
+	}
+	
+	private static void InitCalRegion(){
+		RegionCP = new double [REGION+1];
+		RegionBenefit = new int [REGION+1];
+		RegionParticipant = new int [REGION+1];
+		RegionCost = new int [REGION+1];
+		RegionIsFull = new boolean [REGION+1];
+		RegionVisitOrder = new RegionOrder [REGION];
 	}
 	
 	private static void getData(File inputFile){
@@ -103,12 +115,12 @@ public class PSP_heuristic_practical_var {
             for (int j = 0; j < REGION; j++){
                 for (int i = 1; i < 2; i++){
                 	value[i][j+1] = Integer.valueOf(values.getCell(j, i).getContents());
-                	regionCP[j+1] = 0;
-                	memoryR[j+1] = false;
-                	Calvalue[i][j+1] = value[i][j+1];
+                	
+                	//init region
+                	RegionCP[j+1] = RegionBenefit[j+1] = RegionCost[j+1] = RegionParticipant[j+1] = 0;
+                	RegionIsFull[j+1] = false;
                 }
             }
-
             w.close();
         } catch (IOException e) {
         	e.printStackTrace();
@@ -116,9 +128,8 @@ public class PSP_heuristic_practical_var {
             e.printStackTrace();
         }
 	}
+	
 	public static void Calculate(){
-		start = System.currentTimeMillis();
-		
 		//Calculate all B2C factors (i.e., Qi,k= bik/cik)
 		for (int i = 1; i <= PARTICIPANT; i++){
 			for(int j = 1; j <= REGION; j++){
@@ -137,83 +148,79 @@ public class PSP_heuristic_practical_var {
 		      }
 		});
 		
-		while(runTime-- > 0){
-			//Choosing
-			for(int i = 0; i < PARTICIPANT*REGION; i++){
-				queue.add(quality[i]);
-				B2C task = quality[i];
-				regionCP[task.region] += task.cp;
-			}
-			
-			double max = 0;
-			int pos = -1;
-			for(int i = 1; i <= REGION; i++){
-				if(regionCP[i] > max && value[1][i] > 0 && memoryR[i] == false){
-					max = regionCP[i];
-					pos = i;
+		//Put the B/C into queue by decreasing order
+		for(int i = 0; i < PARTICIPANT*REGION; i++){
+			queue.add(quality[i]);
+			B2C task = quality[i];
+			RegionCP[task.region] += task.cp;
+		}
+		
+		//Classify participant to each region
+		while(!queue.isEmpty()){
+			B2C task = queue.remove();
+			int benefit = task.benefit;
+			int cost = task.cost;
+			int region = task.region;
+			if(RegionIsFull[region] == false){
+				RegionBenefit[region] += benefit;
+				RegionCost[region] += cost;
+				RegionParticipant[region]++;
+				//if cumulative region value is larger than its full value, quit assigning and this region is over.
+				if(RegionBenefit[region] >= value[1][region]){
+					RegionIsFull[region] = true;
 				}
-			}
-			memoryR[pos] = true;
-			
-			for(int i = 1; i <= REGION; i++){
-				cleanParticipant();
-			}
-			
-			while(!queue.isEmpty()){
-				B2C task = queue.remove();
-				int participant = task.participant;
-				int region = task.region;
-				
-				if((task.select == false) && (value[1][region] > 0) && (region == pos) && (Budget-task.cost >= 0)){
-					value[1][region] -= task.benefit;
-					Budget -= task.cost;
-					setSelected(quality, participant, true);
-					selectedparticipant++;
-					totalcost += task.cost;
-				}
-				
-				/*if((task.select == false) && (value[1][region] > 0) && (Budget-task.cost >= 0)){
-					value[1][region] -= task.benefit;
-					Budget -= task.cost;
-					setSelected(quality, participant, true);
-					selectedparticipant++;
-					totalcost += task.cost;
-				}*/
 			}
 		}
 		
-		end = System.currentTimeMillis();
+		for(int i = 0; i < REGION; i++){
+			RegionOrder order = new RegionOrder(i+1, RegionCP[i+1]);
+			RegionVisitOrder[i] = order;
+		}
 		
-		for(int i = 1; i <= REGION; i++){
-			if(value[1][i] <= 0){
-				waste += Math.abs(value[1][i]);
-				objective += Calvalue[1][i];
+		//Sort RegionCP in non-increasing order.
+		Arrays.sort(RegionVisitOrder, new Comparator<RegionOrder>(){
+		    @Override
+			public int compare(RegionOrder entry1, RegionOrder entry2) {
+		    	double a = entry1.TotalCP;
+				double b = entry2.TotalCP;
+				return (int) (b - a);
+			}
+		});
+		//Choosing
+		for(int i = 0; i < REGION; i++){
+			RegionOrder order = RegionVisitOrder[i];
+			int pos = order.id;
+			if(Budget - RegionCost[pos] >= 0){
+				objective += value[1][pos];
+				waste += RegionBenefit[pos]-value[1][pos];
+				Budget -= RegionCost[pos];
+				selectedparticipant += RegionParticipant[pos];
+				totalcost += RegionCost[pos];
 			}
 		}
-		//System.out.println("Objective Value: " + objective + ", Execution Time: " + (end-start)/1000.0 + 
-				//", Participants: " + selectedparticipant + ", Totalcost: " + totalcost);
 	}
 	
-	public static void cleanParticipant(){
-		for (B2C e : queue) {
-			int participant = e.participant;
-			int region = e.region;
-			if(value[1][region] > 0)
-				setSelected(quality, participant, false);
+	public static class RegionOrder{
+		int id;
+		double TotalCP;
+		
+		public RegionOrder(){
+			id = 0;
+			TotalCP = 0;
 		}
-	}
-	
-	public static void setSelected(B2C quality[], int participant, boolean flag){
-		for(int i = 0; i < PARTICIPANT*REGION; i++)
-			if(quality[i].participant == participant)
-				quality[i].select = flag;
+		
+		public RegionOrder(int id, double cp){
+			this.id = id;
+			this.TotalCP = cp;
+		}
 	}
 	
 	public static class B2C{
-		int participant = 0, region = 0, benefit, cost;
-		boolean select = false;
+		int participant = 0;
+		int region = 0;
+		int benefit;
+		int cost;
 		double cp = 0;
-		
 		
 		public B2C(){
 			participant = 0;
@@ -226,12 +233,11 @@ public class PSP_heuristic_practical_var {
 			this.region = region;
 			this.benefit = benefit;
 			this.cost = cost;
-			cp = benefit / cost;
+			this.cp = benefit / cost;
 		}
-		
+	
 		public double get(){
 			return cp;
 		}
-		
 	}
 }
