@@ -1,12 +1,12 @@
 clc
 clear
-T = 1000;       %time of experiments
-R = 5;          %number of region%
+T = 100;       %time of experiments
+R = 10;          %number of region%
 P = 1500;       %number of participant%
-B = 75;         %benefit variance
+B = 70;         %benefit variance
 C = 20;         %cost variance
-colValue = 'E';  % set column of value in excel 
-col = 'F';      % set column of benefit and cost in excel
+colValue = 'J';  % set column of value in excel 
+col = 'K';      % set column of benefit and cost in excel
 %a = char(double('A') + R);
 
 %raw data
@@ -26,18 +26,25 @@ CP_Min = zeros(T, 1);
 B_AboveAvg = zeros(T, 1);
 CP_AboveAvg = zeros(T, 1);
 
-%Generate TAS%
+%Generate TAS
 for i = 1:T
+    Flag = true;
     value_uniform = unidrnd(14901, 1, R)+99;
+    while(Flag)
+        value_uniform = unidrnd(14901, 1, R)+99;
+        values_SD(i, 1) = std(value_uniform);
+        values_M(i, 1) = mean(value_uniform);
+        values_CV(i, 1) = values_SD(i, 1) / values_M(i, 1);
+        if(values_CV(i, 1) >= 1)
+            Flag = false;
+       end
+    end
     num = num2str(i);
-    values_SD(i, 1) = std(value_uniform);
-    values_M(i, 1) = mean(value_uniform);
-    values_CV(i, 1) = values_SD(i, 1) / values_M(i, 1);
     fileName = ['data' num '.xls'];
     xlswrite(fileName, value_uniform, 'values', ['A2:' colValue '2']);
 end
 
-%Generate PSS%
+%Generate PSS
 for i = 1:T
     Flag = true;
     benefit_uniform = zeros(P, R);
