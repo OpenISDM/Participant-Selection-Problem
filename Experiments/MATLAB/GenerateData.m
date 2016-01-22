@@ -1,34 +1,34 @@
 clc
 clear
-T = 1000;       %time of experiments
-R = 5;          %number of region%
-P = 1500;       %number of participant%
-B = 75;         %benefit variance
-C = 20;         %cost variance
+Times = 1000;       %time of experiments
+Region = 5;          %number of region%
+Participant = 1500;       %number of participant%
+Benefit = 75;         %benefit variance
+Cost = 20;         %cost variance
 colValue = 'E';  % set column of value in excel 
 col = 'F';      % set column of benefit and cost in excel
 %a = char(double('A') + R);
 
 %raw data
-values_SD = zeros(T, 1);
-values_M = zeros(T, 1);
-values_CV = zeros(T, 1);
-benefits_SD = zeros(T, 1);
-benefits_M = zeros(T, 1);
-benefits_CV = zeros(T, 1);
-costs_SD = zeros(T, 1);
-costs_M = zeros(T, 1);
-costs_CV = zeros(T, 1);
-CP = zeros(P, R);
-CP_Avg = zeros(T, 1);
-CP_Max = zeros(T, 1);
-CP_Min = zeros(T, 1);
-B_AboveAvg = zeros(T, 1);
-CP_AboveAvg = zeros(T, 1);
+values_SD = zeros(Times, 1);
+values_M = zeros(Times, 1);
+values_CV = zeros(Times, 1);
+benefits_SD = zeros(Times, 1);
+benefits_M = zeros(Times, 1);
+benefits_CV = zeros(Times, 1);
+costs_SD = zeros(Times, 1);
+costs_M = zeros(Times, 1);
+costs_CV = zeros(Times, 1);
+CP = zeros(Participant, Region);
+CP_Avg = zeros(Times, 1);
+CP_Max = zeros(Times, 1);
+CP_Min = zeros(Times, 1);
+B_AboveAvg = zeros(Times, 1);
+CP_AboveAvg = zeros(Times, 1);
 
 %Generate TAS%
-for i = 1:T
-    value_uniform = unidrnd(14901, 1, R)+99;
+for i = 1:Times
+    value_uniform = unidrnd(14901, 1, Region)+99;
     num = num2str(i);
     values_SD(i, 1) = std(value_uniform);
     values_M(i, 1) = mean(value_uniform);
@@ -38,26 +38,26 @@ for i = 1:T
 end
 
 %Generate PSS%
-for i = 1:T
+for i = 1:Times
     Flag = true;
-    benefit_uniform = zeros(P, R);
-    cost_uniform = zeros(P, R);
+    benefit_uniform = zeros(Participant, Region);
+    cost_uniform = zeros(Participant, Region);
     while(Flag)
-        seed = unidrnd(3, P, R);
+        seed = unidrnd(3, Participant, Region);
         SD = std(seed);
         M = mean(seed);
         cv = SD/M;
         if cv > 0.5
-            seed = unidrnd(3, P, R);
+            seed = unidrnd(3, Participant, Region);
         else
             Flag = false;
         end
     end
-    for j=1:P
-        for k=1:R
+    for j=1:Participant
+        for k=1:Region
             choose = seed(j,k);
-            B_var = ceil(B/3);
-            C_var = ceil(C/3);
+            B_var = ceil(Benefit/3);
+            C_var = ceil(Cost/3);
             if (choose == 1)
                 benefit_uniform(j,k) = unidrnd(B_var);
                 cost_uniform(j,k) = unidrnd(C_var);
@@ -79,8 +79,8 @@ for i = 1:T
     end
     num = num2str(i);
     fileName = ['data' num '.xls'];
-    xlswrite(fileName, benefit_uniform, 'benefits', ['B2:' col num2str(P+1)]);
-    xlswrite(fileName, cost_uniform, 'costs', ['B2:' col num2str(P+1)]);
+    xlswrite(fileName, benefit_uniform, 'benefits', ['B2:' col num2str(Participant+1)]);
+    xlswrite(fileName, cost_uniform, 'costs', ['B2:' col num2str(Participant+1)]);
     
     %raw data estimate
     benefits_SD(i, 1) = std(benefit_uniform(:));
