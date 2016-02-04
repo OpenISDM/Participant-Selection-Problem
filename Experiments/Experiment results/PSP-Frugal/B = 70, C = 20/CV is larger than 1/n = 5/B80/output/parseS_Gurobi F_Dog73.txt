@@ -1,0 +1,4 @@
+{"Objective" : "18419.0",
+"Execution time": "0.150     ",
+"Used budget": "4414.0",
+"People": "445.0"}
