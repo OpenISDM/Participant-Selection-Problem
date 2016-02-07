@@ -1,5 +1,5 @@
 {"Objective" : "22429.0",
-"Execution time": "21.953     ",
+"Execution time": "3.951     ",
 "Used budget": "4998.0",
 "People": "531.0",
 "Total waste": "1240.0",
