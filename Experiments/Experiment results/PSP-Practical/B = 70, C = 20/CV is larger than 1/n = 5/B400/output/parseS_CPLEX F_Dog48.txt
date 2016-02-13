@@ -1,0 +1,16 @@
+{"Objective" : "32105.0",
+"Execution time": "0.173     ",
+"Used budget": "18626.0",
+"People": "1500.0"}
+"Total waste": "28292.0",
+"Only waste": "28292.0",
+"Region 1 Only Region": "28170.0",
+"Region 1 Full region": "28170.0",
+"Region 2 Only Region": "43.0",
+"Region 2 Full region": "43.0",
+"Region 3 Only Region": "38.0",
+"Region 3 Full region": "38.0",
+"Region 4 Only Region": "40.0",
+"Region 4 Full region": "40.0",
+"Region 5 Only Region": "1.0",
+"Region 5 Full region": "1.0"}

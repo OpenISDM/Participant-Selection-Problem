@@ -1,7 +1,7 @@
 {"Objective" : "36241.0",
-"Execution time": "999.896     ",
+"Execution time": "1000.116     ",
 "Used budget": "7943.0",
-"People": "830.0",
+"People": "830.0"}
 "Total waste": "569.0",
 "Only waste": "105.0",
 "Region 1 Only Region": "0.0",
